@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/swiper.min.css" />
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			h2 {
+				text-align: center;
+				padding: 40px 0;
+			}
+			
+			#container {
+				width: 1200px;
+				margin: 0 auto;
+			}
+			
+			.main {
+				margin: 15px 15px;
+			}
+			
+			.lf {
+				width: 500px;
+				height: 500px;
+				float: left;
+				border: 1px solid red;
+			}
+			
+			.rg {
+				
+				float: right;
+				border: 1px solid red;
+			}
+			
+			.swiper-container{
+				width: 500px;
+				height: 500px;
+			}
+			.swiper-slide li{
+				width: 220px;
+				height: 200px;
+				border: 1px solid red;
+				float: left;
+				margin-top: 25px ;
+				margin-left: 19px;
+				list-style: none;
+				position: relative;
+			}
+			.swiper-slide li a{
+				text-decoration: none;
+				display: block;
+				width: 100%;
+				height: 100%;
+			}
+			.swiper-slide li a span{
+				width: 200px;
+				height: 25px;
+				display: block;
+				font-size:14px ;
+				padding-left: 5px;
+				position: absolute;
+				bottom: 0;
+				overflow: hidden;
+			}
+			
+			.clearfix:before,
+			.clearfix:after {
+				display: table;
+				line-height: 0;
+				content: "";
+			}
+			
+			.clearfix:after {
+				clear: both;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="head">
+			<h2>视频模式</h2>
+		</div>
+		<div id="container">
+			<div class="main clearfix">
+				<div class="lf">
+					<iframe frameborder="no" scrolling="yes" name="kk" src="" width="100%" height="100%"></iframe>
+				</div>
+				<div class="rg">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<ul>
+									<li>
+										<a href="http://www.baidu.com" target="kk">
+											<span>广东省第十二届人民代表大会</span>
+										</a>
+									</li>
+									<li>
+										<a href="http://www.hao123.com" target="kk">
+											<span>广东省第十二届人民代表大会</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span>广东省第十二届人民代表大会</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span>广东省第十二届人民代表大会</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="swiper-slide">
+								<ul>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</div>
+							<div class="swiper-slide">
+								<ul>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</div>
+						</div>
+						<!-- 如果需要分页器 -->
+						<div class="swiper-pagination"></div>
+						<!-- 如果需要导航按钮 -->
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="js/swiper.min.js"></script>
+		<script>
+			var swiper = new Swiper('.swiper-container', {
+				autoplay: 3000,
+				autoplayDisableOnInteraction : false,
+				
+				pagination: '.swiper-pagination',
+				nextButton: '.swiper-button-next',
+				prevButton: '.swiper-button-prev',
+				slidesPerView: 1,
+				paginationClickable: true,
+				spaceBetween: 30,
+				loop: true
+			});
+		</script>
+	</body>
+
+</html>

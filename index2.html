@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/swiper.min.css" />
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				width: 100%;
+				height: 100%;
+				background: url(img/视频模式2.jpg) no-repeat;
+				overflow: hidden;
+				background-size: 100% 100%;
+			}
+			/*#bg {
+				position: fixed;
+				width: 100%;
+				height: 100%;
+				z-index: -1;
+			}*/
+			
+			#head img {
+				display: block;
+				width: 33%;
+				margin: 0 auto;
+				padding-top: 15px;
+			}
+			
+			#container {
+				width: 1250px;
+				margin: 0 auto;
+				padding-top: 20px;
+			}
+			
+			.main {
+				height: 480px;
+				border: 1px solid red;
+				position: relative;
+			}
+			
+			.lf {
+				width: 550px;
+				height: 360px;
+				float: left;
+				margin-top: 80px;
+				margin-left: 40px;
+				border: 1px solid red;
+				position: relative;
+			}
+			.ti{
+				width: 168px;
+				height: 40px;
+				background: url(img/hbj.png) no-repeat;
+				position: absolute;
+				top: -39px;
+				left: -6px;
+				font-size: 14px;
+				color: #FFFFFF;
+			}
+			.ti span{
+				display: block;
+				position: absolute;
+				top: 10px;
+				left: 40px;
+			}
+			.rg {
+				float: right;
+				margin-top: 80px;
+				margin-right: 40px;
+				border: 1px solid red;
+				position: relative;
+			}
+			
+			.swiper-container {
+				width: 550px;
+				height: 360px;
+			}
+			
+			.swiper-slide li {
+				width: 250px;
+				height: 150px;
+				border: 1px solid red;
+				float: left;
+				margin-top: 15px;
+				margin-left: 15px;
+				list-style: none;
+				position: relative;
+			}
+			
+			.swiper-slide li a {
+				text-decoration: none;
+				display: block;
+				width: 100%;
+				height: 100%;
+			}
+			
+			.swiper-slide li a span {
+				width: 200px;
+				height: 25px;
+				display: block;
+				font-size: 14px;
+				padding-left: 5px;
+				position: absolute;
+				bottom: 0;
+				overflow: hidden;
+			}
+			
+		</style>
+	</head>
+
+	<body>
+		<!--<img id="bg" src="img/视频模式2.jpg" />-->
+		<div id="head">
+			<img src="img/视频模式_03.png" alt="" />
+		</div>
+		<div id="container">
+			<div class="main">
+				
+				<div class="lf">
+					<div class="ti"><span>预览窗口</span></div>
+				</div>
+				
+				<div class="rg">
+					<div class="ti"><span>视频列表</span></div>
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<ul>
+									<li>
+										<a href="http://www.baidu.com" target="kk">
+											<span>广东省第十二届人民代表大会</span>
+										</a>
+									</li>
+									<li>
+										<a href="http://www.hao123.com" target="kk">
+											<span>广东省第十二届人民代表大会</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span>广东省第十二届人民代表大会</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span>广东省第十二届人民代表大会</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="swiper-slide">
+								<ul>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</div>
+							<div class="swiper-slide">
+								<ul>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</div>
+						</div>
+
+						<!-- 如果需要分页器 -->
+						<div class="swiper-pagination"></div>
+						<!-- 如果需要导航按钮 -->
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+					</div>
+				</div>
+			</div>
+		      
+		</div>
+
+		<script type="text/javascript" src="js/swiper.min.js"></script>
+		<script>
+			var swiper = new Swiper('.swiper-container', {
+				autoplay: 3000,
+				autoplayDisableOnInteraction: false,
+
+				pagination: '.swiper-pagination',
+				nextButton: '.swiper-button-next',
+				prevButton: '.swiper-button-prev',
+				slidesPerView: 1,
+				paginationClickable: true,
+				spaceBetween: 30,
+				loop: true
+			});
+		</script>
+	</body>
+
+</html>
